@@ -59,11 +59,14 @@
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif;   */
     margin: 1.2rem; 
     margin-top: 0;
     padding-bottom: 1rem;
     z-index: -1;
+}
+
+.teamsabout{
+    padding: 1rem;
 }
 
 .teams .profile{
@@ -74,34 +77,33 @@
     border-top-right-radius:1rem;
 }
 
-.teams img{
-    transform: translateY(-2.9rem);
+.teamsabout img{
+    transform: translateY(-4rem);
     height: 6rem;
     width: 6rem;
-    /* border: 4px solid white; */
     border-radius: 4rem;
 }
 
-.teams h2{
-    margin-top: -2rem;
+.teamsabout h2{
+    margin-top: -3rem;
     font-size: 1.4rem;
     color: red;
     margin-bottom: 0.1rem;
 }
 
-.teams h3{
+.teamsabout h3{
     color: purple;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 300;
 }
 
-.teams p{
+.teamsabout p{
     padding: 0.1rem;
     font-size: 0.8rem;
 }
 
-.teams .social{
+.teamsabout .social{
     padding: 0.5rem;
     margin: 0.5rem 0;
 }
