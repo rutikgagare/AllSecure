@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>All Secure</title>
+</head>
+<body>
+    <div class="main">
+        <div class="ham" id="ham">
+            <i class="fas fa-bars" class="ham" id="ham"></i>
+        </div>
+
+        <nav class="nav-bar" id="nav-bar">
+    
+            <div class="close" id="close">
+                <i class="fas fa-times " id='close-navbar'></i>
+            </div>
+
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <h3>ALL SECURE</h3>  
+            </div>
+            <h5>Be Assured, Be Secured</h5>
+    
+            <div class="nav-list">
+                <ul>
+                    <li><i class="fas fa-home fa-1x"></i><a href="index.html">Home</a></li>
+                    <li><i class="fas fa-address-card"></i><a href="about.html">About Us</a></li>
+                    <li><i class="fas fa-female fa-1x"></i><a href="#">Women Security</a></li>
+                    <li><i class="fas fa-fire-extinguisher"></i><a href="#">Fire Emergency</a></li>
+                    <li><i class="fas fa-search-location"></i><a href="#">Vehicle Search</a></li>
+                    <li><i class="fas fa-clinic-medical"></i><a href="#">Health Emergency</a></li>
+                    <li><i class="far fa-address-book"></i><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class='nav-buttons'>
+                 <a href="signin.html"><button><i class="fas fa-sign-in-alt"></i>Sign in</button></a>
+                <a href="signup.html"><button><i class="fas fa-edit"></i>Sign up</button></a>
+            </div>
+            
+        </nav>
+
+       
+        <div class="container">
+            <div class="registration" id="registration">
+                <div class="sign-in">
+                
+                    <div class="left">
+                        <img src="/Images/undraw_secure_login_pdn4.svg" alt="">
+                        <p> <span>Hello Friends!</span> Don't have a account?</p>
+                        <a href="signup.html"><button class="btn-secondary">Sign up</button></a>
+                    </div>
+
+                    <div class="right">
+                        <h2>Sign in</h2>
+                        <div> <input type="email" placeholder="✉ Email" id="email"></div>
+                        <div><input type="password" placeholder="🔒 Password" id="password"></div>
+    
+                        <p>Forgot your password?</p>
+                        <button onclick="signIn()" class="btn-primary" id="signin" type="submit">Sign in</button>
+
+                        <p>Or Sign in with social platform</p>
+                       
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a> 
+                        </div>
+
+                    </div>
+                
+                </div>
+            </div>
+        </div>  
+    </div>
+   
+
+<script src="https://kit.fontawesome.com/3d43d3975e.js" crossorigin="anonymous"></script>     
+<script src="index.js"></script>      
+</body>
+</html>

@@ -1,0 +1,38 @@
+.btn-primary{
+    width: 150px;
+    border-radius: 1rem;
+    background: rgb(201, 50, 228);
+    border:none;
+    padding: 0.45rem 1rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-primary:hover{
+    color: black;
+    background: white;
+    border: 2px solid rgb(201, 50, 228) ;
+}
+
+.btn-secondary{
+    width: 150px;
+    border-radius: 1rem;
+    background: white;
+    color: black;
+    border:none;
+    padding: 0.45rem 1rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover{
+    background: rgb(125, 23, 144);
+    color: white;
+    border:2px solid white ;
+}
+
+
+
