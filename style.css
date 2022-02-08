@@ -61,6 +61,7 @@
     text-align: center;
     transition: all 0.2s ease-in-out;
     color: white;
+    z-index: 1;
 }
 
 .nav-logo{
