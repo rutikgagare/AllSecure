@@ -202,8 +202,9 @@
 
 .slide p{
     margin-bottom: 0.5rem;
-    line-height: 2;
+    line-height: 1.5;
     padding: 1rem;
+    font-size: 1rem;
 }
 
 /* styling for signin-signup forms */
