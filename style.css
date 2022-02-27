@@ -491,10 +491,8 @@
 }
 
 @media screen and (max-width: 300px) {
-
     .nav-bar{
-        height: 1600px;
-        background-color: red;
+        height: 680px;
     }
 
     .nav-buttons{
@@ -505,13 +503,17 @@
         margin-right:0rem;
     }
 
+    .slide span{
+        font-size: 1rem;
+    }
+
     .slide{
         width: 250px;
-        height: 570px;
+        height: 580px;
     }
 
     .slide p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .signup .right{
