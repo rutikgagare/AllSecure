@@ -493,7 +493,8 @@
 @media screen and (max-width: 300px) {
 
     .nav-bar{
-        height: 1200px;
+        height: 1600px;
+        background-color: red;
     }
 
     .nav-buttons{
