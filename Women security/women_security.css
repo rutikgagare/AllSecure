@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#bg{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alertMsg{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.alarm{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background: rgb(245, 14, 14);
+    border: 3px solid rgb(177, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.alarm.active{
+    background: rgb(177, 27, 27);
+    border: 2px solid rgb(245, 14, 14);
+    box-shadow: 0 0 15px rgb(245, 14, 14),
+                0 0 30px rgb(245, 14, 14),
+                0 0 45px rgb(245, 14, 14),
+                0 0 60px rgb(245, 14, 14);               
+}
