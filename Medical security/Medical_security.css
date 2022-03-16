@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: url("./Medical\ security.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alertMsg{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.alarm{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background: white;
+    border: 3px solid rgb(61 152 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.alarm.active {
+    background: #d5f5e4;
+    border: 2px solid rgb(61 152 218);
+    box-shadow: 0 0 15px rgb(129 176 213), 0 0 30px rgb(129 176 213), 0 0 45px rgb(129 176 213), 0 0 60px rgb(129 176 213);
+}
