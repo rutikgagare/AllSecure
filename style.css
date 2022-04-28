@@ -171,6 +171,7 @@
     border-radius: 1rem;
     background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 1rem 0;
 }
 
 
@@ -202,8 +203,9 @@
 
 .slide p{
     margin-bottom: 0.5rem;
-    line-height: 2;
+    line-height: 1.5;
     padding: 1rem;
+    font-size: 1rem;
 }
 
 /* styling for signin-signup forms */
@@ -377,7 +379,7 @@
     }
     .slide{
         width: 500px;
-        height: 550px;
+        height: 580px;
     }
     
     .slider{
@@ -401,7 +403,7 @@
 
     .slide{
         width: 400px;
-        height: 550px;
+        height: 570px;
     }
 
     .slide p{
@@ -450,11 +452,11 @@
 
     .slide{
         width: 300px;
-        height: 550px;
+        height: 520px;
     }
 
     .slide p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     .slide img{
@@ -489,7 +491,6 @@
 }
 
 @media screen and (max-width: 300px) {
-
     .nav-bar{
         height: 680px;
     }
@@ -502,13 +503,17 @@
         margin-right:0rem;
     }
 
+    .slide span{
+        font-size: 1rem;
+    }
+
     .slide{
         width: 250px;
-        height: 550px;
+        height: 580px;
     }
 
     .slide p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .signup .right{
