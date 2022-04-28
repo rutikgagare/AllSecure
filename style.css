@@ -549,8 +549,61 @@
         padding: 0.4rem;
         border-radius: 1rem;
     }
-
     
+}
+
+.fire{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.fire a:hover{
+    color: red;
+}
+
+.fire a{
+    text-decoration: none;
+}
+
+.firemain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: purple;
+    height: 100vh;
+    width: 100%;
+}
+
+.vehiclemain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: purple;
+    height: 100vh;
+    width: 100%;
+}
+
+.vehicle{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.vehicle a:hover{
+    color: red;
+}
+
+.vehicle a{
+    text-decoration: none;
 }
 
 
