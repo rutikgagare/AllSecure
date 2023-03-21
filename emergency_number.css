@@ -33,7 +33,7 @@ body{
     background-color: rgb(176, 9, 192);
     text-align: center;
     margin: 1rem auto;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: normal;
     color: white;
 }
@@ -60,6 +60,9 @@ h4{
 }
 
 @media only screen and (max-width: 600px) {
+    .emergencyno{
+        width: 100%;
+    }
     .eno{
         width: 90%;
     }
