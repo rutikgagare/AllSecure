@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(169 66 237);;
+    background-color: rgb(165, 85, 219);;
 }
 
 .emergencymain{
@@ -64,6 +64,6 @@ h4{
         width: 100%;
     }
     .eno{
-        width: 90%;
+        width: 80%;
     }
 }
