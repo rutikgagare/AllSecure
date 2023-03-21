@@ -3,7 +3,7 @@
     if(!isset($_SESSION['username'])){
         header('location:login.php');
     }
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .accidentmain{
+        .accidentmain {
             display: flex;
             width: 100vw;
             height: 100vh;
@@ -41,7 +41,7 @@
             height: 100px;
             width: 100px;
             background: rgb(225, 221, 220);
-            color:blue;
+            color: blue;
             border: 1px solid rgb(61 152 218);
             display: flex;
             align-items: center;
@@ -62,7 +62,7 @@
             box-shadow: 0 0 15px rgb(129 176 213), 0 0 30px rgb(129 176 213), 0 0 45px rgb(129 176 213), 0 0 60px rgb(129 176 213);
         }
 
-        h2{
+        h2 {
             font-size: 1.2rem;
             color: blue;
         }
@@ -78,8 +78,26 @@
             border-radius: 1rem;
         }
 
-        a{
-            text-decoration:none;
+        a {
+            text-decoration: none;
+        }
+
+        .accident_security_inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .accident_security_inner{
+                width: 90%;
+            }
+
+            .note{
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -130,13 +148,17 @@
             </div>
         </nav>
         <div class="accident_security">
-            <div id="accident_sec" class="alarm"><a href="https://vahaninfos.com/vehicle-details-by-number-plate" target='_blank'>Help!</a></div>
-            <div class="note">
-                <h3>Please Click the above Help button For Searching</h3>
-                <h3>vehicle details using RTO Registered Number</h3> 
+            <div class="accident_security_inner">
+                <div id="accident_sec" class="alarm"><a href="https://vahaninfos.com/vehicle-details-by-number-plate"
+                        target='_blank'>Help!</a></div>
+                <div class="note">
+                    <h3>Please Click the above Help button For Searching</h3>
+                    <h3>vehicle details using RTO Registered Number</h3>
+                </div>
             </div>
+
         </div>
-        
+
     </div>
 
     <script src="index.js"></script>

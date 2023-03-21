@@ -91,6 +91,25 @@
             border:none;
             font-size:1.2rem;
         }
+
+        .fire_security_inner{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .fire_security_inner {
+                width: 90%;
+            }
+
+            .note {
+                font-size: 1rem;
+            }
+        }
+
+        
     </style>
 </head>
 
@@ -138,12 +157,16 @@
             </div>
         </nav>
         <div class="fire_security">
-            <div id="fire_sec" class="alarm">Help!</div>
-            <div class="note">
-                <h3>Please Click the above Help button if you are in a emergency </h3>
-                <h3>We will send your location to nearby Fire Brigade Services</h3> 
+
+            <div class="fire_security_inner">
+                <div id="fire_sec" class="alarm">Help!</div>
+                <div class="note">
+                    <h3>Please Click the above Help button if you are in a emergency </h3>
+                    <h3>We will send your location to nearby Fire Brigade Services</h3> 
+                </div>
+                <button class="btn2"><a href="./firemain.html">Some listed nearby Fire Emergency Sites</a></button>
             </div>
-            <button class="btn2"><a href="./firemain.html">Some listed nearby Fire Emergency Sites</a></button>
+           
         </div>
     </div>
 
