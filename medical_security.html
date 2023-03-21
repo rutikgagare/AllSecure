@@ -3,7 +3,7 @@
     if(!isset($_SESSION['username'])){
         header('location:login.php');
     }
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,11 +39,19 @@
             /* border: 2px solid red; */
         }
 
+        .health_security_inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
         .alarm {
             height: 100px;
             width: 100px;
             background: rgb(225, 221, 220);
-            color:blue;
+            color: blue;
             border: 1px solid rgb(61 152 218);
             display: flex;
             align-items: center;
@@ -64,13 +72,13 @@
             box-shadow: 0 0 15px rgb(129 176 213), 0 0 30px rgb(129 176 213), 0 0 45px rgb(129 176 213), 0 0 60px rgb(129 176 213);
         }
 
-        h2{
+        h2 {
             font-size: 1.2rem;
             color: blue;
         }
 
         .note {
-            /* border: 2px solid blue; */
+            border: 2px solid blue;
             color: white;
             text-align: center;
             font-size: 1.3rem;
@@ -80,16 +88,22 @@
             border-radius: 1rem;
         }
 
-        .btn2{
-            padding:1rem;
-            margin-top:3rem;
-            border-radius:1rem;
-            border:none;
-            font-size:1.2rem;
+        .btn2 {
+            padding: 1rem;
+            margin-top: 3rem;
+            border-radius: 1rem;
+            border: none;
+            font-size: 1.2rem;
         }
 
-        a{
-            text-decoration:none;
+        a {
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .health_security_inner{
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -97,7 +111,9 @@
 <body>
     <div class="main healthmain">
         <div class="userinfo">
-            <h4><i class="fa fa-user"></i><?php echo $_SESSION['username']; ?></h4>
+            <h4><i class="fa fa-user"></i>
+                <?php echo $_SESSION['username']; ?>
+            </h4>
         </div>
 
         <div class="logout">
@@ -138,33 +154,33 @@
             </div>
         </nav>
         <div class="health_security">
-            <div id="medical_sec" class="alarm">Help!</div>
+            <div class="health_security_inner">
+                <div id="medical_sec" class="alarm">Help!</div>
                 <div class="note">
                     <h3>Please Click the above Help button if you are in a emergency </h3>
                     <h3>We will send your location to medical services.</h3>
                 </div>
                 <button class="btn2"><a href="https://www.pcmcindia.gov.in/quicklinks.php?
             Link=7">Some listed nearby Medical Emergency Sites</a></button>
+            </div>
+
         </div>
 
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/3d43d3975e.js" crossorigin="anonymous"></script>
-    <script>
-        const btn = document.getElementById('medical_sec');
-        btn.addEventListener('click', () => {
-            btn.classList.add('active');
-            // alertMsg.style.display = 'block';
-            window.location.href = "smtp/index2.php";
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/3d43d3975e.js" crossorigin="anonymous"></script>
+        <script>
+            const btn = document.getElementById('medical_sec');
+            btn.addEventListener('click', () => {
+                btn.classList.add('active');
+                // alertMsg.style.display = 'block';
+                window.location.href = "smtp/index2.php";
 
-        })
-    </script>
+            })
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-
