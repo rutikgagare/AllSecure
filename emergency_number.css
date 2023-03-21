@@ -8,26 +8,25 @@
 }
 
 .emergencymain {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-  background-color: rgb(173, 100, 222);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
 }
 
 .emergencyno {
-  width: 70%;
-  margin: 1rem auto;
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(169 66 237);;
 }
 
 .eno {
   border: 1px solid white;
   border-radius: 10px;
-  width: 70%;
+  width: 50%;
   padding: 0.5rem;
   background-color: rgb(176, 9, 192);
   text-align: center;
