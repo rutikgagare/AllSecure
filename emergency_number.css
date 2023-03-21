@@ -10,7 +10,7 @@
 .emergencymain {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     margin: auto;
 }
 
@@ -61,11 +61,12 @@ h4 {
   .emergencyno {
     width: 100%;
   }
+
   .eno {
     width: 80%;
   }
 
-  .emergencymain{
+  /* .emergencymain{
     height: 200rem;
-  }
+  } */
 }
