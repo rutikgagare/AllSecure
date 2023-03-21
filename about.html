@@ -7,15 +7,12 @@
 
     <link rel="shortcut icon" type="image/png" href="./Images/shield.png">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <title>All Secure</title>
-
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about.css">
+    <title>About Us</title>
 </head>
-
 <body>
-    <div class="main aboutmain">
-        
+    <div class="aboutmain">
         <div class="ham" id="ham">
             <i class="fas fa-bars" class="ham" id="ham"></i>
         </div>
@@ -36,35 +33,38 @@
             
             <div class="nav-list">
                 <ul>
-                    <li><i class="fas fa-home fa-1x"></i><a href="index.html">Home</a></li>
-                    <li><i class="fas fa-address-card"></i><a href="about.html">About Us</a></li>
-                    <li><i class="fas fa-female fa-1x"></i><a href="./Women security/women_security.html">Women Security</a></li>
-                    <li><i class="fas fa-fire-extinguisher"></i><a href="./Fires Security/Fire_security.html">Fire Emergency</a></li>
-                    <li><i class="fas fa-search-location"></i><a href="./Accident security/Accident_security.html">Vehicle Search</a></li>
-                    <li><i class="fas fa-clinic-medical"></i><a href="./Medical security/Medical_security.html">Health Emergency</a></li>
-                    <li><i class="far fa-address-book"></i><a href="#">Contact Us</a></li>
+                    <li><i class="fas fa-home fa-1x"></i><a href="index.php">Home</a></li>
+                    <li><i class="fas fa-address-card"></i><a href="about.php">About Us</a></li>
+                    <li><i class="fas fa-female fa-1x"></i><a href="Women_Security.php">Women Security</a></li>
+                    <li><i class="fas fa-fire-extinguisher"></i><a href="Fire_Security.php">Fire Emergency</a></li>
+                    <li><i class="fas fa-search-location"></i><a href="Vehicle_Security.php">Vehicle Search</a></li>
+                    <li><i class="fas fa-clinic-medical"></i><a href="Health_Security.php">Health Emergency</a></li>
+                    <li><i class="fas fa-clinic-medical"></i><a href="emergencynumber.php">Emergency NO.</a></li>
+                    <li><i class="far fa-address-book"></i><a href="https://form.jotform.com/221234418915453">Contact Us</a></li>
                 </ul>
             </div>
     
             <div class='nav-buttons'> 
-                <a href="signin.html"><button><i class="fas fa-sign-in-alt"></i>Sign in</button></a>
-                <a href="signup.html"><button><i class="fas fa-edit"></i>Sign up</button></a>
+                <a href="signin.php"><button><i class="fas fa-sign-in-alt"></i>Log in</button></a>
+                <a href="signup.php"><button><i class="fas fa-edit"></i>Register</button></a>
             </div>
             
         </nav>
+        
         <div class="about">
             <div class="header">
-                <h1>Our Team</h1>
+                <h1>OUR TEAM</h1>
             </div>
 
             <div class="members1">
-                <div class="teams">
+                <div class="teams" id="team1">
                     <div class="profile"></div>
                     <div class="teamsabout">
-                        <img src="./Images/random.jpg" alt="">
+                        <img class="userimg" src="./Images/yash.jpg" alt="">
                         <h2>Yash Gokakkar</h2>
                         <h3>Web developer</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta possimus error molestiae, architecto omnis quam et quae animi sit ratione quisquam! Enim, sint facilis soluta saepe impedit.</p>
+                        <p>Hello everyone, myself Yash Gokakkar, I am currently working on DSA, OOP concepts, exploring web development. Learning software engineering skills and acquiring them implement while creating projects.
+                        </p>
                         <div class="social">
                             <a href="https://www.facebook.com/yash.gokakkar"><i class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com/yashgokakkar99"><i class="fab fa-instagram"></i></a>
@@ -77,9 +77,9 @@
                 <div class="teams">
                     <div class="profile"></div>
                     <div class="teamsabout">
-                        <img src="./Images/photograph_1.jpg" alt="">
+                        <img class="userimg" src="./Images/rutik.jpg" alt="">
                         <h2>Rutik Gagare</h2>
-                        <h3>front-end developer</h3>
+                        <h3>Web developer</h3>
                         <p>Computer Science Student pursuing bachelors degree at D.Y Patil College of Engineering Akurdi, having keen interest in Web developement and Competitive Programming</p>
                         <div class="social">
                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -93,9 +93,9 @@
                 <div class="teams">
                     <div class="profile"></div>
                     <div class="teamsabout">
-                        <img src="./Images/random.jpg" alt="">
+                        <img class="userimg" src="./Images/shriniket.jpg" alt="">
                         <h2>Shriniket Kulkarni</h2>
-                        <h3>full stack developer</h3>
+                        <h3>Web developer</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta possimus error molestiae, architecto omnis quam et quae animi sit ratione quisquam! Enim, sint facilis soluta saepe impedit.</p>
                         <div class="social">
                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -111,7 +111,7 @@
                 <div class="teams">
                     <div class="profile"></div>
                     <div class="teamsabout">
-                        <img src="./Images/random.jpg" alt="">
+                        <img class="userimg" src="./Images/mandar.jpg" alt="">
                         <h2>Mandar Rane</h2>
                         <h3>Web developer</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta possimus error molestiae, architecto omnis quam et quae animi sit ratione quisquam! Enim, sint facilis soluta saepe impedit.</p>
@@ -123,14 +123,17 @@
                         </div>
                     </div> 
                 </div>
+    
         
                 <div class="teams">
                     <div class="profile"></div>
                     <div class="teamsabout">
-                        <img src="./Images/random.jpg" alt="">
+                        <img class="userimg" src="./Images/pradnya.jpg" alt="">
                         <h2>Pradnya Kshirsagar</h2>
                         <h3>Web developer</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta possimus error molestiae, architecto omnis quam et quae animi sit ratione quisquam! Enim, sint facilis soluta saepe impedit.</p>
+                        <p>I am frontend web developer. Currently learning backend. I like to do competitive programming.
+                        I am frontend web developer. Currently learning backend. I like to do competitive programming.
+                        </p>
                         <div class="social">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com/03_pradnya/"><i class="fab fa-instagram"></i></a>
@@ -146,6 +149,6 @@
 
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/3d43d3975e.js" crossorigin="anonymous"></script>  
- 
+    
 </body>
 </html>

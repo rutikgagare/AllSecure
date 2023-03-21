@@ -8,38 +8,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-::placeholder { 
+/* ::placeholder { 
     color: black;
     opacity: 1; 
+} */
+
+.main{
+    width: 100vw;
+    height: 100vh;
 }
 
 .home{
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: 100vw;
     padding: 2rem;
     justify-content: center;
-    background-image: url('/Images/All_secure.png');
+    background-image: url('./Images/logowithbrand.png');
     background-repeat: no-repeat;
-    background-size: 1500px;
-    background-size: cover;   
+    /* background-size: 1500px; */
+    background-size: cover;
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     max-width: 1152px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin:auto;
 }
 
 .close{
     position: absolute;
     right: 1rem;
     font-size: 1.2rem;
-    /*text-align: right;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem; */
 }
 
 .ham{
@@ -104,7 +105,6 @@
 .nav-list li i{
     width: 1.5rem;
     margin-right: 0.5rem;
-    /* border: 2px solid red; */
 }
 
 .nav-list li a{
@@ -136,6 +136,7 @@
     padding: 0.5rem;
     background-color: transparent;
     cursor: pointer;
+    border: 1px solid white;
     border-radius: 0.3rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -171,11 +172,13 @@
     border-radius: 1rem;
     background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    padding-bottom: 1rem 0;
 }
 
 
 .slide-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     font-size: 1.5rem;
     width: 100%;
     height: 3rem;
@@ -372,6 +375,37 @@
     font-size: 0.9rem;
 }
 
+.userinfo{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background-color: purple;
+    color: white;
+    border-bottom-left-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.userinfo i{
+    margin-right: 0.5rem;
+}
+
+.logout{
+    position: absolute;
+    top: 0;
+    right: 9rem;
+    background-color: purple;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-weight: bold;
+}
+
+.logout a{
+    text-decoration: none;
+    color: #f8f5f5;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 920px) {
     .nav-bar{
@@ -379,7 +413,7 @@
     }
     .slide{
         width: 500px;
-        height: 580px;
+        height: 550px;
     }
     
     .slider{
@@ -403,7 +437,7 @@
 
     .slide{
         width: 400px;
-        height: 570px;
+        height: 550px;
     }
 
     .slide p{
@@ -452,7 +486,7 @@
 
     .slide{
         width: 300px;
-        height: 520px;
+        height: 500px;
     }
 
     .slide p{
@@ -491,6 +525,7 @@
 }
 
 @media screen and (max-width: 300px) {
+
     .nav-bar{
         height: 680px;
     }
@@ -503,17 +538,13 @@
         margin-right:0rem;
     }
 
-    .slide span{
-        font-size: 1rem;
-    }
-
     .slide{
         width: 250px;
-        height: 580px;
+        height: 550px;
     }
 
     .slide p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .signup .right{
@@ -553,63 +584,56 @@
     .social-icons a i{
         padding: 0.4rem;
         border-radius: 1rem;
+
     }
     
 }
 
-.fire{
-    background-color: #ffffff;
-    border-radius: 1rem;
-    width: 50%;
-    margin: 1rem auto;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    border: none;
-}
 
-.fire a:hover{
-    color: red;
-}
-
-.fire a{
-    text-decoration: none;
-}
-
-.firemain{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: purple;
-    height: 100vh;
+/* css for Women Security Page */
+#bg{
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
-.vehiclemain{
+.securitycontainer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: purple;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.securitycontainer #alertMsg{
+    display: none;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
-.vehicle{
-    background-color: #ffffff;
-    border-radius: 1rem;
-    width: 50%;
-    margin: 1rem auto;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    border: none;
+.securitycontainer .alarm{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background: white;
+    border: 3px solid rgb(61 152 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.vehicle a:hover{
-    color: red;
+.securitycontainer .alarm.active {
+    background: #d5f5e4;
+    border: 2px solid rgb(61 152 218);
+    box-shadow: 0 0 15px rgb(129 176 213), 0 0 30px rgb(129 176 213), 0 0 45px rgb(129 176 213), 0 0 60px rgb(129 176 213);
 }
 
-.vehicle a{
-    text-decoration: none;
-}
 
 
 
